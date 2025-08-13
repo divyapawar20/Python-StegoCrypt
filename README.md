@@ -53,10 +53,10 @@ python main.py
 Follow the on-screen instructions to hide or extract messages.
 
 📷 Screenshots
-<img width="1797" height="992" alt="image" src="https://github.com/user-attachments/assets/02252b51-6d5d-4792-b11e-c889b7007a80" />
-<img width="1272" height="961" alt="image" src="https://github.com/user-attachments/assets/b87db492-f209-4b77-ace6-a5b479446aef" />
+## 📸 Screenshots
 
-
+![Screenshot 1](https://github.com/user-attachments/assets/02252b51-6d5d-4792-b11e-c889b7007a80)
+![Screenshot 2](https://github.com/user-attachments/assets/b87db492-f209-4b77-ace6-a5b479446aef)
 
 🔐 Security Note
 Make sure to keep your passcode safe, as it is required for message decryption.
