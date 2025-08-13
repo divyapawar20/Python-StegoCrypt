@@ -14,21 +14,15 @@ def to_bin(data):
         raise TypeError("Type not supported.")
 
 def encode_message(image, secret_message, password):
-    # Combine password + message
-    secret_message = password + "|" + secret_message
-    # Add a delimiter to mark end of message
-    secret_message += "====="
-    
-    # Convert to binary
+    secret_message = password + "|" + secret_message + "====="
     binary_message = to_bin(secret_message)
     msg_len = len(binary_message)
 
-    # Get image copy
     img = image.copy()
     total_pixels = img.size
 
     if msg_len > total_pixels:
-        raise ValueError("Message is too long to fit in the image!")
+        raise ValueError("Message too long to fit in the image!")
 
     data_index = 0
     for row in img:
@@ -52,11 +46,8 @@ def decode_message(image, password):
     for row in image:
         for pixel in row:
             r, g, b = to_bin(pixel)
-            binary_data += r[-1]
-            binary_data += g[-1]
-            binary_data += b[-1]
-    
-    # Split into 8-bit bytes
+            binary_data += r[-1] + g[-1] + b[-1]
+
     all_bytes = [binary_data[i:i+8] for i in range(0, len(binary_data), 8)]
     decoded_data = ""
     for byte in all_bytes:
@@ -66,34 +57,29 @@ def decode_message(image, password):
 
     decoded_data = decoded_data.replace("=====", "")
     saved_password, actual_message = decoded_data.split("|", 1)
+    return actual_message if saved_password == password else None
 
-    if saved_password == password:
-        return actual_message
-    else:
-        return None
-
-# === MAIN ===
-# Load image
-img_path = r"C:\Users\Divya\Desktop\cyber\mypic.jpg"  # Change to your image path
+# --- MAIN ---
+# Ask user for image path instead of using absolute local path
+img_path = input("Enter image path (e.g., assets/mypic.jpg): ")
 image = cv2.imread(img_path)
 if image is None:
     print("Error: Could not load image.")
     exit()
 
-# Input
 secret_msg = input("Enter secret message: ")
 passwd = input("Enter a passcode: ")
 
-# Encode
 encoded_image = encode_message(image, secret_msg, passwd)
-output_path = "encryptedImage.png"
+output_path = "assets/encryptedImage.png"
 cv2.imwrite(output_path, encoded_image)
 print(f"Message hidden in {output_path}")
 
-# Automatically open the image
-os.startfile(output_path)
+try:
+    os.startfile(output_path)
+except:
+    pass
 
-# Decode
 dec_pass = input("Enter passcode for decryption: ")
 decoded_message = decode_message(cv2.imread(output_path), dec_pass)
 
