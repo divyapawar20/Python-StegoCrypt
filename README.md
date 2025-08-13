@@ -54,16 +54,6 @@ Follow the on-screen instructions to hide or extract messages.
 
 ## 📸 Screenshots
 
-![Screenshot 1](https://github.com/user-attachments/assets/6bd68143-c616-4ca1-8e7d-4d8589c881f3)
-![Screenshot 2](https://github.com/user-attachments/assets/c31bef92-177a-4d30-b553-07505eb3fab6)
-
-
-
-
-
-
-
-
 
 🔐 Security Note
 Make sure to keep your passcode safe, as it is required for message decryption.
