@@ -56,8 +56,8 @@ Follow the on-screen instructions to hide or extract messages.
 
 ## 📸 Screenshots
 
-![Screenshot 1](assets/output1.png)
-![Screenshot 2](assets/output2.png)
+"C:\Users\Divya\Desktop\Python StegoCrypt project\assets - Copy\output1.png"
+
 
 
 
