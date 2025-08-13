@@ -54,11 +54,8 @@ Follow the on-screen instructions to hide or extract messages.
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
-<img width="1797" height="992" alt="output1" src="https://github.com/user-attachments/assets/6bd68143-c616-4ca1-8e7d-4d8589c881f3" />
-<img width="1272" height="961" alt="output2" src="https://github.com/user-attachments/assets/c31bef92-177a-4d30-b553-07505eb3fab6" />
-
+![Screenshot 1](https://github.com/user-attachments/assets/6bd68143-c616-4ca1-8e7d-4d8589c881f3)
+![Screenshot 2](https://github.com/user-attachments/assets/c31bef92-177a-4d30-b553-07505eb3fab6)
 
 
 
