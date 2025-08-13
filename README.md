@@ -53,8 +53,9 @@ python main.py
 Follow the on-screen instructions to hide or extract messages.
 
 ## 📸 Screenshots
-![Output 1](assets/output1.png)
-![Output 2](assets/output2.png)
+![Screenshot 1](./assets/output1.png)
+![Screenshot 2](./assets/output2.png)
+
 
 
 
