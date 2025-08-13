@@ -38,7 +38,7 @@ Edit
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://..................................Python-StegoCrypt.git
+git clone https://github.com/yourusername/Python-StegoCrypt.git
 cd Python-StegoCrypt
 2️⃣ Install Dependencies
 bash
@@ -53,8 +53,10 @@ python main.py
 Follow the on-screen instructions to hide or extract messages.
 
 ## 📸 Screenshots
-![Screenshot 1](./assets/output1.png)
-![Screenshot 2](./assets/output2.png)
+![Screenshot 1](<img width="1797" height="992" alt="output1" src="https://github.com/user-attachments/assets/7566413c-7b60-4a11-a36c-0d161915f16f" />
+)
+![Screenshot 2](<img width="1272" height="961" alt="output2" src="https://github.com/user-attachments/assets/b7b8822e-13d0-4e46-992e-7913b2f06b6e" />
+)
 
 
 
