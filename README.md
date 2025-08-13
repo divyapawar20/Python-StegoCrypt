@@ -38,7 +38,7 @@ Edit
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Python-StegoCrypt.git
+git clone https://.........................................Python-StegoCrypt.git
 cd Python-StegoCrypt
 2️⃣ Install Dependencies
 bash
